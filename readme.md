@@ -86,7 +86,7 @@ Ensure you have the following installed:
 Create and activate a virtual environment (optional but recommended):
 
 ```bash
-conda create -p venv python==3.9 -y
+conda create -p venv python==3.11 -y
 conda activate venv/ 
 ```
 
@@ -102,6 +102,10 @@ Create a `.env` file in the root directory of your project and add your HuggingF
 
 ```bash
 HUGGINGFACEHUB_API_TOKEN="your_HUGGINGFACEHUB_API_TOKEN"
+```
+
+```bash
+GROQ_API_KEY="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"
 ```
 
 ### **4. Run the Flask Application**
