@@ -105,7 +105,7 @@ HUGGINGFACEHUB_API_TOKEN="your_HUGGINGFACEHUB_API_TOKEN"
 ```
 
 ```bash
-GROQ_API_KEY="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"
+GROQ_API_KEY="your_GROQ_API_KEY"
 ```
 
 ### **4. Run the Flask Application**
