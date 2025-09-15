@@ -15,4 +15,6 @@ google-api-python-client
 huggingface_hub
 langchainhub
 langchain_google_community
+
 groq
+h11
