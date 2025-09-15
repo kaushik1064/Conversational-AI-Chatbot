@@ -68,7 +68,7 @@ Be strict - only mark as RELEVANT if there's a clear topical connection."""
                     "content": f"Context: {context[:500]}...\n\nUser Query: {user_query}\n\nIs this query relevant to the context?"
                 }
             ],
-            model="llama3-8b-8192",
+            model="openai/gpt-oss-20b",
             temperature=0.1,
             max_tokens=10
         )
@@ -116,7 +116,7 @@ Instructions:
         # Make API call to Groq
         chat_completion = groq_client.chat.completions.create(
             messages=messages,
-            model="llama3-8b-8192",  # You can change this to other available models
+            model="openai/gpt-oss-20b",  # You can change this to other available models
             temperature=0.1,
             max_tokens=1000,
             top_p=1,
@@ -307,4 +307,5 @@ def delete_session():
         return jsonify({'error': 'Session not found'}), 404
 
 if __name__ == '__main__':
+
     app.run(debug=True)
